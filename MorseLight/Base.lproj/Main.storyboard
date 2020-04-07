@@ -15,55 +15,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type alphanum and space here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htw-vY-9Gi" userLabel="AlphaNumTextArea">
-                                <rect key="frame" x="92.5" y="125" width="229.5" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ly2-dF-UmM">
+                                <rect key="frame" x="-43" y="-52" width="500" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type something in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9W-ki-GrM" userLabel="MorseTextArea">
-                                <rect key="frame" x="137" y="179" width="140.5" height="21"/>
+                                <rect key="frame" x="137" y="491" width="140.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dm-x8-dM1" userLabel="TranslateButton">
-                                <rect key="frame" x="154.5" y="730" width="105" height="42"/>
+                                <rect key="frame" x="154.5" y="662" width="105" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Translate!">
-                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="translateOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeP-bG-IPv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morse Code Flashlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt8-Wg-xpL" userLabel="TitleLabel">
-                                <rect key="frame" x="120" y="75" width="242" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="hello, world!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ls-Kl-95l">
+                                <rect key="frame" x="87" y="192" width="240" height="269"/>
+                                <color key="backgroundColor" systemColor="quaternaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DN1-Ho-KcU">
+                                <rect key="frame" x="174.5" y="745" width="65" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="unt-GC-uMQ">
-                                <rect key="frame" x="52" y="60" width="60" height="60"/>
-                            </imageView>
+                                <state key="normal" title="Flash!">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-D6-LmB">
+                                <rect key="frame" x="67" y="110" width="280" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="MorseLight Translator">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6dm-x8-dM1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0tW-ix-nGz"/>
-                            <constraint firstItem="k9W-ki-GrM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ECz-rm-VN0"/>
-                            <constraint firstItem="unt-GC-uMQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-125" id="SEL-n4-5bJ"/>
-                            <constraint firstItem="htw-vY-9Gi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U8R-sp-Fnn"/>
-                            <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="htw-vY-9Gi" secondAttribute="bottom" constant="20" id="UL8-xF-lnU"/>
-                            <constraint firstItem="lt8-Wg-xpL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-358" id="iQd-w5-E6q"/>
-                            <constraint firstItem="lt8-Wg-xpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="34" id="iUj-Pd-Gkp"/>
-                            <constraint firstItem="unt-GC-uMQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-358" id="iek-9v-SSr"/>
-                            <constraint firstItem="6dm-x8-dM1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="303" id="pRM-Bz-PAk"/>
-                            <constraint firstItem="htw-vY-9Gi" firstAttribute="top" secondItem="lt8-Wg-xpL" secondAttribute="bottom" constant="20" id="ziq-WT-qOs"/>
+                            <constraint firstItem="0ls-Kl-95l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="1sF-6U-Yf5"/>
+                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-314" id="41x-5d-iIe"/>
+                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Atz-Zf-SUd"/>
+                            <constraint firstItem="DN1-Ho-KcU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="318" id="BH2-Vg-zHa"/>
+                            <constraint firstItem="0ls-Kl-95l" firstAttribute="top" secondItem="b0n-D6-LmB" secondAttribute="bottom" constant="34" id="EJp-jj-HSc"/>
+                            <constraint firstItem="6dm-x8-dM1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="235" id="P0B-co-AQs"/>
+                            <constraint firstItem="DN1-Ho-KcU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rn2-Uo-aRx"/>
+                            <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="0ls-Kl-95l" secondAttribute="bottom" constant="30" id="bi3-1y-T1F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ls-Kl-95l" secondAttribute="trailing" constant="87" id="cEm-gf-FpV"/>
+                            <constraint firstItem="k9W-ki-GrM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="cHp-Uz-4UQ"/>
+                            <constraint firstItem="6dm-x8-dM1" firstAttribute="top" secondItem="k9W-ki-GrM" secondAttribute="bottom" constant="150" id="eEe-BL-2Hm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k9W-ki-GrM" secondAttribute="trailing" constant="136.5" id="gBJ-ff-rrF"/>
+                            <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="0ls-Kl-95l" secondAttribute="bottom" constant="30" id="m3n-XS-V15"/>
+                            <constraint firstItem="6dm-x8-dM1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oUn-OZ-coe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="alphaNumTextField" destination="htw-vY-9Gi" id="Rhm-7b-f9L"/>
+                        <outlet property="alphaNumTextField" destination="0ls-Kl-95l" id="VaN-aR-0At"/>
                         <outlet property="morseCodeLabel" destination="k9W-ki-GrM" id="b4h-Ug-d3L"/>
                     </connections>
                 </viewController>
@@ -73,6 +90,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image-1" width="60" height="60"/>
+        <image name="Image" width="500" height="1000"/>
     </resources>
 </document>

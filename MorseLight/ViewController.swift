@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     /*
      * The alphaNumTextField is a INPUT that is used to type an alphanum statement. This should include all lowercase letters, all numbers, and the following symbols *add symbols from dictionary*.
      */
-    @IBOutlet weak var alphaNumTextField: UITextField!
+    @IBOutlet weak var alphaNumTextField: UITextView!
     
     /*
      * The moseCodeLabel is OUTPUT that will display the morsecode text translated from alphanum after 'Translate!' (translateOnClick) is pressed
