@@ -15,19 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morse Code Flashlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt8-Wg-xpL" userLabel="TitleLabel">
-                                <rect key="frame" x="86" y="78" width="242" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type alphanum and space here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htw-vY-9Gi" userLabel="AlphaNumTextArea">
-                                <rect key="frame" x="92.5" y="128" width="229.5" height="34"/>
+                                <rect key="frame" x="92.5" y="125" width="229.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type something in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9W-ki-GrM" userLabel="MorseTextArea">
-                                <rect key="frame" x="137" y="182" width="140.5" height="21"/>
+                                <rect key="frame" x="137" y="179" width="140.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,15 +37,26 @@
                                     <action selector="translateOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeP-bG-IPv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morse Code Flashlight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt8-Wg-xpL" userLabel="TitleLabel">
+                                <rect key="frame" x="120" y="75" width="242" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="unt-GC-uMQ">
+                                <rect key="frame" x="52" y="60" width="60" height="60"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6dm-x8-dM1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0tW-ix-nGz"/>
-                            <constraint firstItem="lt8-Wg-xpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZD-lq-0Je"/>
                             <constraint firstItem="k9W-ki-GrM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ECz-rm-VN0"/>
+                            <constraint firstItem="unt-GC-uMQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-125" id="SEL-n4-5bJ"/>
                             <constraint firstItem="htw-vY-9Gi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U8R-sp-Fnn"/>
                             <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="htw-vY-9Gi" secondAttribute="bottom" constant="20" id="UL8-xF-lnU"/>
-                            <constraint firstItem="lt8-Wg-xpL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-355" id="ixD-qS-H3s"/>
+                            <constraint firstItem="lt8-Wg-xpL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-358" id="iQd-w5-E6q"/>
+                            <constraint firstItem="lt8-Wg-xpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="34" id="iUj-Pd-Gkp"/>
+                            <constraint firstItem="unt-GC-uMQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-358" id="iek-9v-SSr"/>
                             <constraint firstItem="6dm-x8-dM1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="303" id="pRM-Bz-PAk"/>
                             <constraint firstItem="htw-vY-9Gi" firstAttribute="top" secondItem="lt8-Wg-xpL" secondAttribute="bottom" constant="20" id="ziq-WT-qOs"/>
                         </constraints>
@@ -64,7 +69,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="127"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image-1" width="60" height="60"/>
+    </resources>
 </document>
