@@ -1,27 +1,26 @@
 {
   "images" : [
     {
-      "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "MLLogo40x40.jpg",
+      "size" : "20x20",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "MLLogo60x60.jpg",
+      "filename" : "MLFade60x60.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "MLLogo58x58.jpg",
+      "filename" : "MLFade58x58.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "MLLogo87x87.jpg",
+      "filename" : "MLFade87x87.png",
       "scale" : "3x"
     },
     {
@@ -75,8 +74,9 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "MLFade76x76.png",
       "scale" : "1x"
     },
     {
@@ -92,7 +92,7 @@
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "MLLogo58x58 copy 2.jpg",
+      "filename" : "MLFade1024x1024.png",
       "scale" : "1x"
     }
   ],

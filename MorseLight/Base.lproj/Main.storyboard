@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="hello, world!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ls-Kl-95l">
-                                <rect key="frame" x="87" y="192" width="240" height="269"/>
+                                <rect key="frame" x="87" y="172" width="240" height="289"/>
                                 <color key="backgroundColor" systemColor="quaternaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -53,21 +53,24 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-D6-LmB">
-                                <rect key="frame" x="67" y="110" width="280" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="120" y="96" width="235" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="MorseLight Translator">
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="xiP-VL-HQD">
+                                <rect key="frame" x="59" y="90" width="48" height="48"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="0ls-Kl-95l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="1sF-6U-Yf5"/>
-                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-314" id="41x-5d-iIe"/>
-                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Atz-Zf-SUd"/>
                             <constraint firstItem="DN1-Ho-KcU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="318" id="BH2-Vg-zHa"/>
+                            <constraint firstItem="xiP-VL-HQD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-334" id="C5d-my-xHQ"/>
                             <constraint firstItem="0ls-Kl-95l" firstAttribute="top" secondItem="b0n-D6-LmB" secondAttribute="bottom" constant="34" id="EJp-jj-HSc"/>
                             <constraint firstItem="6dm-x8-dM1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="235" id="P0B-co-AQs"/>
+                            <constraint firstItem="xiP-VL-HQD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-124" id="Rhb-Ln-1gi"/>
                             <constraint firstItem="DN1-Ho-KcU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rn2-Uo-aRx"/>
                             <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="0ls-Kl-95l" secondAttribute="bottom" constant="30" id="bi3-1y-T1F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ls-Kl-95l" secondAttribute="trailing" constant="87" id="cEm-gf-FpV"/>
@@ -76,6 +79,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k9W-ki-GrM" secondAttribute="trailing" constant="136.5" id="gBJ-ff-rrF"/>
                             <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="0ls-Kl-95l" secondAttribute="bottom" constant="30" id="m3n-XS-V15"/>
                             <constraint firstItem="6dm-x8-dM1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oUn-OZ-coe"/>
+                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-331" id="vKU-vf-5Qs"/>
+                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="30.5" id="zz9-8w-ph4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -91,5 +96,6 @@
     </scenes>
     <resources>
         <image name="Image" width="500" height="1000"/>
+        <image name="Image-1" width="48" height="48"/>
     </resources>
 </document>
