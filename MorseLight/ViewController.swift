@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 //CONNECT BUTTONS
 class ViewController: UIViewController {
@@ -15,6 +16,11 @@ class ViewController: UIViewController {
      * The alphaNumTextField is a INPUT that is used to type an alphanum statement. This should include all lowercase letters, all numbers, and the following symbols *add symbols from dictionary*.
      */
     @IBOutlet weak var alphaNumTextField: UITextView!
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
     
     /*
      * The moseCodeLabel is OUTPUT that will display the morsecode text translated from alphanum after 'Translate!' (translateOnClick) is pressed
@@ -26,11 +32,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    
-    
-    
-    
+
+//------------------------
+//FUNCTIONALITY BELOW HERE
+//------------------------
 
     /*
      * This button when pressed translates English written in alphaNumTextField (INPUT) and outputs the corresponding Morse Code translation, moseCodeLabel (OUTPUT)
@@ -66,6 +71,32 @@ class ViewController: UIViewController {
             "x": "-..- ",
             "y": "-.-- ",
             "z": "--.. ",
+            "A": ".- ",
+            "B": "-... ",
+            "C": "-.-. ",
+            "D": "-.. ",
+            "E": ". ",
+            "F": "..-. ",
+            "G": "--. ",
+            "H": ".... ",
+            "I": ".. ",
+            "J": ".--- ",
+            "K": "-.- ",
+            "L": ".-.. ",
+            "M": "-- ",
+            "N": "-. ",
+            "O": "--- ",
+            "P": ".--. ",
+            "Q": "--.- ",
+            "R": ".-. ",
+            "S": "... ",
+            "T": "- ",
+            "U": "..- ",
+            "V": "...- ",
+            "W": ".-- ",
+            "X": "-..- ",
+            "Y": "-.-- ",
+            "Z": "--.. ",
             "0": "----- ",
             "1": ".---- ",
             "2": "..--- ",
@@ -81,13 +112,16 @@ class ViewController: UIViewController {
             "?": "..--.. ",
             "'": "-....-",
             "!": "-.-.-- ",
+            "-": "-....- ",
             "/": "-.--.- ",
             "(": "-.--. ",
             ")": "-.--.- ",
             ":": "---... ",
             ";": "-.-.-. ",
             "$": "...-..- ",
-            " ": " "
+            "&": ".-... ",
+            "@": ".--.-. ",
+            " ": "   "
         ]
         
         /*
@@ -96,11 +130,15 @@ class ViewController: UIViewController {
         func strToAlphaArr(input str: String) -> [Character] {
             var arr = [Character]()
             for char in str {
-                arr.append(char)
+                if alphaToMorseKey[char] == nil {
+                    continue
+                } else {
+                    arr.append(char)
+                }
             }
             return arr
         } //strToArray(String) -> [Character]
-        let alphaArr = strToAlphaArr(input: alphaNumTextField.text!)
+        let alphaArr = strToAlphaArr(input: alphaNumTextField.text)
          
         /*
          * the alphaArrToMorseArr function takes the resulting array of the strToAlphaArr function and translates each individual character in the alpha array, and translates it to its corresponding morse code
@@ -160,8 +198,16 @@ class ViewController: UIViewController {
             return (alphaStr, morseStr, flashStr)
         } //alphaStrToMorseStr(String) -> String
         morseCodeLabel.text = morseStr
-
+        
     } //translateOnClick(Any)
+    
+    
+    
+    
+    @IBAction func flashOnClick(_ sender: Any) {
+        morseCodeLabel.text = "this button works!"
+    } //flashOnClick
+    
     
 } //UIViewController
 

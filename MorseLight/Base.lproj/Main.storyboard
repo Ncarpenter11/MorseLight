@@ -19,12 +19,6 @@
                                 <rect key="frame" x="-43" y="-52" width="500" height="1000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type something in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9W-ki-GrM" userLabel="MorseTextArea">
-                                <rect key="frame" x="137" y="491" width="140.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dm-x8-dM1" userLabel="TranslateButton">
                                 <rect key="frame" x="154.5" y="662" width="105" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -37,7 +31,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="hello, world!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ls-Kl-95l">
-                                <rect key="frame" x="87" y="172" width="240" height="289"/>
+                                <rect key="frame" x="87" y="168" width="240" height="170"/>
                                 <color key="backgroundColor" systemColor="quaternaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -51,6 +45,9 @@
                                     <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="flashOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pgl-Vz-mxq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0n-D6-LmB">
                                 <rect key="frame" x="120" y="96" width="235" height="42"/>
@@ -62,25 +59,32 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="xiP-VL-HQD">
                                 <rect key="frame" x="59" y="90" width="48" height="48"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type someting in above, tap translate to translate, and press Flash to flash Morse Code!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9W-ki-GrM" userLabel="MorseTextArea">
+                                <rect key="frame" x="50" y="408" width="314" height="246"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="0ls-Kl-95l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="1sF-6U-Yf5"/>
-                            <constraint firstItem="DN1-Ho-KcU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="318" id="BH2-Vg-zHa"/>
-                            <constraint firstItem="xiP-VL-HQD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-334" id="C5d-my-xHQ"/>
-                            <constraint firstItem="0ls-Kl-95l" firstAttribute="top" secondItem="b0n-D6-LmB" secondAttribute="bottom" constant="34" id="EJp-jj-HSc"/>
-                            <constraint firstItem="6dm-x8-dM1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="235" id="P0B-co-AQs"/>
-                            <constraint firstItem="xiP-VL-HQD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-124" id="Rhb-Ln-1gi"/>
-                            <constraint firstItem="DN1-Ho-KcU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rn2-Uo-aRx"/>
-                            <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="0ls-Kl-95l" secondAttribute="bottom" constant="30" id="bi3-1y-T1F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ls-Kl-95l" secondAttribute="trailing" constant="87" id="cEm-gf-FpV"/>
-                            <constraint firstItem="k9W-ki-GrM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="cHp-Uz-4UQ"/>
-                            <constraint firstItem="6dm-x8-dM1" firstAttribute="top" secondItem="k9W-ki-GrM" secondAttribute="bottom" constant="150" id="eEe-BL-2Hm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k9W-ki-GrM" secondAttribute="trailing" constant="136.5" id="gBJ-ff-rrF"/>
-                            <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="0ls-Kl-95l" secondAttribute="bottom" constant="30" id="m3n-XS-V15"/>
-                            <constraint firstItem="6dm-x8-dM1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oUn-OZ-coe"/>
-                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-331" id="vKU-vf-5Qs"/>
-                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="30.5" id="zz9-8w-ph4"/>
+                            <constraint firstItem="6dm-x8-dM1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154.5" id="3Lq-i4-bog"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DN1-Ho-KcU" secondAttribute="trailing" constant="174.5" id="4Sh-Xl-OG4"/>
+                            <constraint firstItem="xiP-VL-HQD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-334" id="GIb-vG-0jF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DN1-Ho-KcU" secondAttribute="bottom" constant="75" id="KeG-jt-Dyy"/>
+                            <constraint firstItem="xiP-VL-HQD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-124" id="Nj6-fs-gwY"/>
+                            <constraint firstItem="6dm-x8-dM1" firstAttribute="top" secondItem="k9W-ki-GrM" secondAttribute="bottom" constant="233" id="PFm-BC-VbI"/>
+                            <constraint firstItem="0ls-Kl-95l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Srx-Fy-fpj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k9W-ki-GrM" secondAttribute="trailing" constant="50" id="T4Q-tc-gFi"/>
+                            <constraint firstItem="k9W-ki-GrM" firstAttribute="top" secondItem="0ls-Kl-95l" secondAttribute="bottom" constant="30" id="U1s-cq-XWl"/>
+                            <constraint firstItem="DN1-Ho-KcU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174.5" id="adg-sZ-X9Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6dm-x8-dM1" secondAttribute="trailing" constant="154.5" id="gCt-WJ-xo0"/>
+                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-331" id="gIu-mM-2L0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ls-Kl-95l" secondAttribute="trailing" constant="87" id="kEE-vH-i8T"/>
+                            <constraint firstItem="b0n-D6-LmB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="30.5" id="mUI-VO-11o"/>
+                            <constraint firstItem="DN1-Ho-KcU" firstAttribute="top" secondItem="6dm-x8-dM1" secondAttribute="bottom" constant="41" id="nIO-PM-5nf"/>
+                            <constraint firstItem="0ls-Kl-95l" firstAttribute="top" secondItem="b0n-D6-LmB" secondAttribute="bottom" constant="30" id="szL-pH-oxW"/>
+                            <constraint firstItem="k9W-ki-GrM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="yG0-8G-an1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
